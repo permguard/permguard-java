@@ -59,9 +59,7 @@ Below is a sample Java `main` method demonstrating how to create a Permguard cli
 ```java
 public static void main(String[] args) {
     // Create and configure the Permguard client.
-    PermguardClient client = new PermguardClient(
-            new PermguardConfig.Builder("localhost", 9094).build()
-    );
+    PermguardClient client = new PermguardClient(new PermguardConfig.Builder("localhost", 9094).build());
 
     try {
         // Build request details using the builder pattern for clarity.
