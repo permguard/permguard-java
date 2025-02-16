@@ -87,7 +87,6 @@ public static void main(String[] args) {
         }
     } catch (Exception e) {
         System.err.println("Error managing request: " + e.getMessage());
-        e.printStackTrace();
     } finally {
         // Close the client.
         client.shutdown();
