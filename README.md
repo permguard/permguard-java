@@ -69,7 +69,7 @@ public static void main(String[] args) {
         Principal principalDetail = new Principal.Builder("user", "amy.smith@acmecorp.com", "keycloak").build();
 
         Item itemDetails = new Item.Builder("MagicFarmacia::Platform::BranchInfo", "subscription", Map.of("active", true), List.of()).build();
-        Entity entityDetail1 = new Entity.Builder("cedar", List.of(itemDetails)).build();
+        Entity entityDetail = new Entity.Builder("cedar", List.of(itemDetails)).build();
 
         Subject subjectDetail = new Subject.Builder("user", "amy.smith@acmecorp.com", "keycloak", Map.of("isSuperUser", true)).build();
         Resource resourceDetail = new Resource.Builder("MagicFarmacia::Platform::Subscription", "e3a786fd07e24bfa95ba4341d3695ae8", Map.of("isEnabled", true)).build();
@@ -77,7 +77,7 @@ public static void main(String[] args) {
         Map<String, Object> context = Map.of("isSubscriptionActive", true, "time", "2025-01-23T16:17:46+00:00");
 
         // Perform the authorization check.
-        AuthResponsePayload response = client.check(policyStoreDetail, actionDetail, principalDetail, resourceDetail, entityDetail1, subjectDetail, context);
+        AuthResponsePayload response = client.check(policyStoreDetail, actionDetail, principalDetail, resourceDetail, entityDetail, subjectDetail, context);
 
         // Handle the response.
         if (response.isDecision()) {
