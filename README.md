@@ -31,7 +31,7 @@ Add the following dependency and build configuration to your project's `pom.xml`
     <dependency>
         <groupId>com.permguard.pep</groupId>
         <artifactId>permguard-java</artifactId>
-        <version>0.0.4-SNAPSHOT</version>
+        <version>0.0.5-SNAPSHOT</version>
     </dependency>
 </dependencies>
 
@@ -59,7 +59,9 @@ Below is a sample Java `main` method demonstrating how to create a Permguard cli
 ```java
 public static void main(String[] args) {
     // Create and configure the Permguard client.
-    AZClient client = new AZClient(new AZConfig.Builder("localhost", 9094).build());
+    AZClient client = new AZClient(
+            new AZConfig.Builder("localhost", 9094).build()
+    );
 
     try {
         // Build request details using the builder pattern for clarity.
