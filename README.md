@@ -31,7 +31,7 @@ Add the following dependency and build configuration to your project's `pom.xml`
     <dependency>
         <groupId>com.permguard.pep</groupId>
         <artifactId>permguard-java</artifactId>
-        <version>0.0.3-SNAPSHOT</version>
+        <version>0.0.5-SNAPSHOT</version>
     </dependency>
 </dependencies>
 
@@ -59,7 +59,9 @@ Below is a sample Java `main` method demonstrating how to create a Permguard cli
 ```java
 public static void main(String[] args) {
     // Create and configure the Permguard client.
-    PermguardClient client = new PermguardClient(new PermguardConfig.Builder("localhost", 9094).build());
+    AZClient client = new AZClient(
+            new AZConfig.Builder("localhost", 9094).build()
+    );
 
     try {
         // Build request details using the builder pattern for clarity.
@@ -76,7 +78,6 @@ public static void main(String[] args) {
 
         // Perform the authorization check.
         AuthResponsePayload response = client.check(policyStoreDetail, actionDetail, principalDetail, resourceDetail, entityDetail, subjectDetail, context);
-
         // Handle the response.
         if (response.isDecision()) {
             System.out.println("✅ Request Authorized");
@@ -85,6 +86,7 @@ public static void main(String[] args) {
         }
     } catch (Exception e) {
         System.err.println("Error managing request: " + e.getMessage());
+        e.printStackTrace();
     } finally {
         // Close the client.
         client.shutdown();
@@ -96,10 +98,10 @@ public static void main(String[] args) {
 
 ## Configuration
 
-The SDK uses the `PermguardConfig` class to hold connection parameters for your Permguard PDP service. For example:
+The SDK uses the `AZConfig` class to hold connection parameters for your Permguard PDP service. For example:
 
 ```java
-PermguardConfig config = new PermguardConfig.Builder("localhost", 9094)
+AZConfig config = new AZConfig.Builder("localhost", 9094)
     .usePlaintext(true) // set to true to use plaintext communication
     .build();
 ```

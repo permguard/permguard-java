@@ -20,19 +20,16 @@
 
 package com.permguard.pep.client;
 
-import com.permguard.pep.config.PermguardConfig;
+import com.permguard.pep.config.AZConfig;
 import com.permguard.pep.exception.AuthorizationException;
-import com.permguard.pep.proto.AuthorizationCheck.AuthorizationCheckRequest;
-import com.permguard.pep.proto.AuthorizationCheck.AuthorizationCheckResponse;
-import com.permguard.pep.proto.V1PDPServiceGrpc;
+import com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationCheckRequest;
+import com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationCheckResponse;
+import com.permguard.pep.internal.proto.V1PDPServiceGrpc;
 import com.permguard.pep.representation.request.*;
 import com.permguard.pep.representation.response.AuthResponsePayload;
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
 import io.grpc.StatusRuntimeException;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.util.Map;
 
 import static com.permguard.pep.mapping.MappingClass.mapAuthResponsePayload;
@@ -41,12 +38,9 @@ import static com.permguard.pep.mapping.MappingClass.mapAuthorizationCheckReques
 /**
  * Client for interacting with the Policy Decision Point.
  */
-public class PermguardClient {
+public class AZClient {
 
-    private static final Logger logger = LoggerFactory.getLogger(PermguardClient.class);
-
-
-    private final PermguardConfig config;
+    private final AZConfig config;
     private ManagedChannel channel;
     V1PDPServiceGrpc.V1PDPServiceBlockingStub blockingStub;
 
@@ -56,7 +50,7 @@ public class PermguardClient {
      *
      * @param config the configuration for the client
      */
-    public PermguardClient(PermguardConfig config) {
+    public AZClient(AZConfig config) {
         this.config = config;
         ManagedChannelBuilder<?> builder = ManagedChannelBuilder
                 .forAddress(config.getHost(), config.getPort());
@@ -98,21 +92,15 @@ public class PermguardClient {
             AuthModel authModelDetail = new AuthModel.Builder(entity, policyStore, principal).build();
             Request requestPayload = new Request.Builder(authModelDetail, subject, resource, action
                 , null, context).build();
-            logger.debug("Mapping authorization check request.");
             AuthorizationCheckRequest request = mapAuthorizationCheckRequest(requestPayload);
-            logger.debug("Authorization check request built: {}", request);
-            logger.debug("Sending request to authorization service.");
             AuthorizationCheckResponse response = blockingStub.authorizationCheck(request);
-            logger.debug("Mapping response to AuthResponsePayload.");
             AuthResponsePayload authResponsePayload = mapAuthResponsePayload(response);
             return authResponsePayload;
 
         } catch (StatusRuntimeException e) {
-            logger.error("gRPC error occurred during authorization check: {}", e.getMessage(), e);
             throw new AuthorizationException("Authorization check failed due to gRPC error.", e);
 
         } catch (Exception e) {
-            logger.error("Unexpected error occurred during authorization check: {}", e.getMessage(), e);
             throw new AuthorizationException("An unexpected error occurred.", e);
         }
     }
