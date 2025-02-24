@@ -88,8 +88,8 @@ public class MappingClass {
 
 
         return AuthorizationCheck.AuthorizationCheckRequest.newBuilder()
-                .setAuthorizationmodel(
-                        AuthorizationCheck.AuthorizationmodelRequest.newBuilder()
+                .setAuthorizationModel(
+                        AuthorizationCheck.AuthorizationModelRequest.newBuilder()
                                 .setZoneID(Long.parseLong(requestPayload.getauthModelDetail().getPolicyStore().getZoneId()))
                                 .setPolicyStore(
                                         getAuthorizationCheckPolicyStore(requestPayload.getauthModelDetail().getPolicyStore())

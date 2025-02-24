@@ -5679,8 +5679,8 @@ public final class AuthorizationCheck {
 
   }
 
-  public interface AuthorizationmodelRequestOrBuilder extends
-      // @@protoc_insertion_point(interface_extends:policydecisionpoint.AuthorizationmodelRequest)
+  public interface AuthorizationModelRequestOrBuilder extends
+      // @@protoc_insertion_point(interface_extends:policydecisionpoint.AuthorizationModelRequest)
       com.google.protobuf.MessageOrBuilder {
 
     /**
@@ -5736,28 +5736,28 @@ public final class AuthorizationCheck {
   }
   /**
    * <pre>
-   * AuthorizationmodelRequest is the input context for making the authorization decision.
+   * AuthorizationModelRequest is the input context for making the authorization decision.
    * </pre>
    *
-   * Protobuf type {@code policydecisionpoint.AuthorizationmodelRequest}
+   * Protobuf type {@code policydecisionpoint.AuthorizationModelRequest}
    */
-  public static final class AuthorizationmodelRequest extends
+  public static final class AuthorizationModelRequest extends
       com.google.protobuf.GeneratedMessageV3 implements
-      // @@protoc_insertion_point(message_implements:policydecisionpoint.AuthorizationmodelRequest)
-      AuthorizationmodelRequestOrBuilder {
+      // @@protoc_insertion_point(message_implements:policydecisionpoint.AuthorizationModelRequest)
+      AuthorizationModelRequestOrBuilder {
   private static final long serialVersionUID = 0L;
-    // Use AuthorizationmodelRequest.newBuilder() to construct.
-    private AuthorizationmodelRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
+    // Use AuthorizationModelRequest.newBuilder() to construct.
+    private AuthorizationModelRequest(com.google.protobuf.GeneratedMessageV3.Builder<?> builder) {
       super(builder);
     }
-    private AuthorizationmodelRequest() {
+    private AuthorizationModelRequest() {
     }
 
     @java.lang.Override
     @SuppressWarnings({"unused"})
     protected java.lang.Object newInstance(
         UnusedPrivateParameter unused) {
-      return new AuthorizationmodelRequest();
+      return new AuthorizationModelRequest();
     }
 
     @java.lang.Override
@@ -5767,15 +5767,15 @@ public final class AuthorizationCheck {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return com.permguard.pep.internal.proto.AuthorizationCheck.internal_static_policydecisionpoint_AuthorizationmodelRequest_descriptor;
+      return com.permguard.pep.internal.proto.AuthorizationCheck.internal_static_policydecisionpoint_AuthorizationModelRequest_descriptor;
     }
 
     @java.lang.Override
     protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return com.permguard.pep.internal.proto.AuthorizationCheck.internal_static_policydecisionpoint_AuthorizationmodelRequest_fieldAccessorTable
+      return com.permguard.pep.internal.proto.AuthorizationCheck.internal_static_policydecisionpoint_AuthorizationModelRequest_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.class, com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.Builder.class);
+              com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.class, com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.Builder.class);
     }
 
     private int bitField0_;
@@ -5929,10 +5929,10 @@ public final class AuthorizationCheck {
       if (obj == this) {
        return true;
       }
-      if (!(obj instanceof com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest)) {
+      if (!(obj instanceof com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest)) {
         return super.equals(obj);
       }
-      com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest other = (com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest) obj;
+      com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest other = (com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest) obj;
 
       if (getZoneID()
           != other.getZoneID()) return false;
@@ -5982,69 +5982,69 @@ public final class AuthorizationCheck {
       return hash;
     }
 
-    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest parseFrom(
+    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest parseFrom(
         java.nio.ByteBuffer data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest parseFrom(
+    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest parseFrom(
         java.nio.ByteBuffer data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest parseFrom(
+    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest parseFrom(
+    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest parseFrom(byte[] data)
+    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest parseFrom(
+    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest parseFrom(java.io.InputStream input)
+    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest parseFrom(
+    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest parseDelimitedFrom(java.io.InputStream input)
+    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input);
     }
-    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest parseDelimitedFrom(
+    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseDelimitedWithIOException(PARSER, input, extensionRegistry);
     }
-    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest parseFrom(
+    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return com.google.protobuf.GeneratedMessageV3
           .parseWithIOException(PARSER, input);
     }
-    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest parseFrom(
+    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -6057,7 +6057,7 @@ public final class AuthorizationCheck {
     public static Builder newBuilder() {
       return DEFAULT_INSTANCE.toBuilder();
     }
-    public static Builder newBuilder(com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest prototype) {
+    public static Builder newBuilder(com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest prototype) {
       return DEFAULT_INSTANCE.toBuilder().mergeFrom(prototype);
     }
     @java.lang.Override
@@ -6074,29 +6074,29 @@ public final class AuthorizationCheck {
     }
     /**
      * <pre>
-     * AuthorizationmodelRequest is the input context for making the authorization decision.
+     * AuthorizationModelRequest is the input context for making the authorization decision.
      * </pre>
      *
-     * Protobuf type {@code policydecisionpoint.AuthorizationmodelRequest}
+     * Protobuf type {@code policydecisionpoint.AuthorizationModelRequest}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessageV3.Builder<Builder> implements
-        // @@protoc_insertion_point(builder_implements:policydecisionpoint.AuthorizationmodelRequest)
-        com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequestOrBuilder {
+        // @@protoc_insertion_point(builder_implements:policydecisionpoint.AuthorizationModelRequest)
+        com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequestOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return com.permguard.pep.internal.proto.AuthorizationCheck.internal_static_policydecisionpoint_AuthorizationmodelRequest_descriptor;
+        return com.permguard.pep.internal.proto.AuthorizationCheck.internal_static_policydecisionpoint_AuthorizationModelRequest_descriptor;
       }
 
       @java.lang.Override
       protected com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return com.permguard.pep.internal.proto.AuthorizationCheck.internal_static_policydecisionpoint_AuthorizationmodelRequest_fieldAccessorTable
+        return com.permguard.pep.internal.proto.AuthorizationCheck.internal_static_policydecisionpoint_AuthorizationModelRequest_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.class, com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.Builder.class);
+                com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.class, com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.Builder.class);
       }
 
-      // Construct using com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.newBuilder()
+      // Construct using com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -6140,17 +6140,17 @@ public final class AuthorizationCheck {
       @java.lang.Override
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return com.permguard.pep.internal.proto.AuthorizationCheck.internal_static_policydecisionpoint_AuthorizationmodelRequest_descriptor;
+        return com.permguard.pep.internal.proto.AuthorizationCheck.internal_static_policydecisionpoint_AuthorizationModelRequest_descriptor;
       }
 
       @java.lang.Override
-      public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest getDefaultInstanceForType() {
-        return com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.getDefaultInstance();
+      public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest getDefaultInstanceForType() {
+        return com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.getDefaultInstance();
       }
 
       @java.lang.Override
-      public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest build() {
-        com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest result = buildPartial();
+      public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest build() {
+        com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
@@ -6158,14 +6158,14 @@ public final class AuthorizationCheck {
       }
 
       @java.lang.Override
-      public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest buildPartial() {
-        com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest result = new com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest(this);
+      public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest buildPartial() {
+        com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest result = new com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest(this);
         if (bitField0_ != 0) { buildPartial0(result); }
         onBuilt();
         return result;
       }
 
-      private void buildPartial0(com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest result) {
+      private void buildPartial0(com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
           result.zoneID_ = zoneID_;
@@ -6225,16 +6225,16 @@ public final class AuthorizationCheck {
       }
       @java.lang.Override
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest) {
-          return mergeFrom((com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest)other);
+        if (other instanceof com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest) {
+          return mergeFrom((com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest other) {
-        if (other == com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.getDefaultInstance()) return this;
+      public Builder mergeFrom(com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest other) {
+        if (other == com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.getDefaultInstance()) return this;
         if (other.getZoneID() != 0L) {
           setZoneID(other.getZoneID());
         }
@@ -6717,23 +6717,23 @@ public final class AuthorizationCheck {
       }
 
 
-      // @@protoc_insertion_point(builder_scope:policydecisionpoint.AuthorizationmodelRequest)
+      // @@protoc_insertion_point(builder_scope:policydecisionpoint.AuthorizationModelRequest)
     }
 
-    // @@protoc_insertion_point(class_scope:policydecisionpoint.AuthorizationmodelRequest)
-    private static final com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest DEFAULT_INSTANCE;
+    // @@protoc_insertion_point(class_scope:policydecisionpoint.AuthorizationModelRequest)
+    private static final com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest DEFAULT_INSTANCE;
     static {
-      DEFAULT_INSTANCE = new com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest();
+      DEFAULT_INSTANCE = new com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest();
     }
 
-    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest getDefaultInstance() {
+    public static com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest getDefaultInstance() {
       return DEFAULT_INSTANCE;
     }
 
-    private static final com.google.protobuf.Parser<AuthorizationmodelRequest>
-        PARSER = new com.google.protobuf.AbstractParser<AuthorizationmodelRequest>() {
+    private static final com.google.protobuf.Parser<AuthorizationModelRequest>
+        PARSER = new com.google.protobuf.AbstractParser<AuthorizationModelRequest>() {
       @java.lang.Override
-      public AuthorizationmodelRequest parsePartialFrom(
+      public AuthorizationModelRequest parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
@@ -6752,17 +6752,17 @@ public final class AuthorizationCheck {
       }
     };
 
-    public static com.google.protobuf.Parser<AuthorizationmodelRequest> parser() {
+    public static com.google.protobuf.Parser<AuthorizationModelRequest> parser() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.google.protobuf.Parser<AuthorizationmodelRequest> getParserForType() {
+    public com.google.protobuf.Parser<AuthorizationModelRequest> getParserForType() {
       return PARSER;
     }
 
     @java.lang.Override
-    public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest getDefaultInstanceForType() {
+    public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest getDefaultInstanceForType() {
       return DEFAULT_INSTANCE;
     }
 
@@ -8162,19 +8162,19 @@ public final class AuthorizationCheck {
       com.google.protobuf.MessageOrBuilder {
 
     /**
-     * <code>.policydecisionpoint.AuthorizationmodelRequest Authorizationmodel = 1;</code>
-     * @return Whether the authorizationmodel field is set.
+     * <code>.policydecisionpoint.AuthorizationModelRequest AuthorizationModel = 1;</code>
+     * @return Whether the AuthorizationModel field is set.
      */
-    boolean hasAuthorizationmodel();
+    boolean hasAuthorizationModel();
     /**
-     * <code>.policydecisionpoint.AuthorizationmodelRequest Authorizationmodel = 1;</code>
-     * @return The authorizationmodel.
+     * <code>.policydecisionpoint.AuthorizationModelRequest AuthorizationModel = 1;</code>
+     * @return The AuthorizationModel.
      */
-    com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest getAuthorizationmodel();
+    com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest getAuthorizationModel();
     /**
-     * <code>.policydecisionpoint.AuthorizationmodelRequest Authorizationmodel = 1;</code>
+     * <code>.policydecisionpoint.AuthorizationModelRequest AuthorizationModel = 1;</code>
      */
-    com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequestOrBuilder getAuthorizationmodelOrBuilder();
+    com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequestOrBuilder getAuthorizationModelOrBuilder();
 
     /**
      * <code>optional string RequestID = 2;</code>
@@ -8324,30 +8324,30 @@ public final class AuthorizationCheck {
     }
 
     private int bitField0_;
-    public static final int AUTHORIZATIONMODEL_FIELD_NUMBER = 1;
-    private com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest authorizationmodel_;
+    public static final int AuthorizationModel_FIELD_NUMBER = 1;
+    private com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest AuthorizationModel_;
     /**
-     * <code>.policydecisionpoint.AuthorizationmodelRequest Authorizationmodel = 1;</code>
-     * @return Whether the authorizationmodel field is set.
+     * <code>.policydecisionpoint.AuthorizationModelRequest AuthorizationModel = 1;</code>
+     * @return Whether the AuthorizationModel field is set.
      */
     @java.lang.Override
-    public boolean hasAuthorizationmodel() {
-      return authorizationmodel_ != null;
+    public boolean hasAuthorizationModel() {
+      return AuthorizationModel_ != null;
     }
     /**
-     * <code>.policydecisionpoint.AuthorizationmodelRequest Authorizationmodel = 1;</code>
-     * @return The authorizationmodel.
+     * <code>.policydecisionpoint.AuthorizationModelRequest AuthorizationModel = 1;</code>
+     * @return The AuthorizationModel.
      */
     @java.lang.Override
-    public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest getAuthorizationmodel() {
-      return authorizationmodel_ == null ? com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.getDefaultInstance() : authorizationmodel_;
+    public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest getAuthorizationModel() {
+      return AuthorizationModel_ == null ? com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.getDefaultInstance() : AuthorizationModel_;
     }
     /**
-     * <code>.policydecisionpoint.AuthorizationmodelRequest Authorizationmodel = 1;</code>
+     * <code>.policydecisionpoint.AuthorizationModelRequest AuthorizationModel = 1;</code>
      */
     @java.lang.Override
-    public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequestOrBuilder getAuthorizationmodelOrBuilder() {
-      return authorizationmodel_ == null ? com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.getDefaultInstance() : authorizationmodel_;
+    public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequestOrBuilder getAuthorizationModelOrBuilder() {
+      return AuthorizationModel_ == null ? com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.getDefaultInstance() : AuthorizationModel_;
     }
 
     public static final int REQUESTID_FIELD_NUMBER = 2;
@@ -8556,8 +8556,8 @@ public final class AuthorizationCheck {
     @java.lang.Override
     public void writeTo(com.google.protobuf.CodedOutputStream output)
                         throws java.io.IOException {
-      if (authorizationmodel_ != null) {
-        output.writeMessage(1, getAuthorizationmodel());
+      if (AuthorizationModel_ != null) {
+        output.writeMessage(1, getAuthorizationModel());
       }
       if (((bitField0_ & 0x00000001) != 0)) {
         com.google.protobuf.GeneratedMessageV3.writeString(output, 2, requestID_);
@@ -8586,9 +8586,9 @@ public final class AuthorizationCheck {
       if (size != -1) return size;
 
       size = 0;
-      if (authorizationmodel_ != null) {
+      if (AuthorizationModel_ != null) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, getAuthorizationmodel());
+          .computeMessageSize(1, getAuthorizationModel());
       }
       if (((bitField0_ & 0x00000001) != 0)) {
         size += com.google.protobuf.GeneratedMessageV3.computeStringSize(2, requestID_);
@@ -8628,10 +8628,10 @@ public final class AuthorizationCheck {
       }
       com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationCheckRequest other = (com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationCheckRequest) obj;
 
-      if (hasAuthorizationmodel() != other.hasAuthorizationmodel()) return false;
-      if (hasAuthorizationmodel()) {
-        if (!getAuthorizationmodel()
-            .equals(other.getAuthorizationmodel())) return false;
+      if (hasAuthorizationModel() != other.hasAuthorizationModel()) return false;
+      if (hasAuthorizationModel()) {
+        if (!getAuthorizationModel()
+            .equals(other.getAuthorizationModel())) return false;
       }
       if (hasRequestID() != other.hasRequestID()) return false;
       if (hasRequestID()) {
@@ -8671,9 +8671,9 @@ public final class AuthorizationCheck {
       }
       int hash = 41;
       hash = (19 * hash) + getDescriptor().hashCode();
-      if (hasAuthorizationmodel()) {
-        hash = (37 * hash) + AUTHORIZATIONMODEL_FIELD_NUMBER;
-        hash = (53 * hash) + getAuthorizationmodel().hashCode();
+      if (hasAuthorizationModel()) {
+        hash = (37 * hash) + AuthorizationModel_FIELD_NUMBER;
+        hash = (53 * hash) + getAuthorizationModel().hashCode();
       }
       if (hasRequestID()) {
         hash = (37 * hash) + REQUESTID_FIELD_NUMBER;
@@ -8831,7 +8831,7 @@ public final class AuthorizationCheck {
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessageV3
                 .alwaysUseFieldBuilders) {
-          getAuthorizationmodelFieldBuilder();
+          getAuthorizationModelFieldBuilder();
           getSubjectFieldBuilder();
           getResourceFieldBuilder();
           getActionFieldBuilder();
@@ -8843,10 +8843,10 @@ public final class AuthorizationCheck {
       public Builder clear() {
         super.clear();
         bitField0_ = 0;
-        authorizationmodel_ = null;
-        if (authorizationmodelBuilder_ != null) {
-          authorizationmodelBuilder_.dispose();
-          authorizationmodelBuilder_ = null;
+        AuthorizationModel_ = null;
+        if (AuthorizationModelBuilder_ != null) {
+          AuthorizationModelBuilder_.dispose();
+          AuthorizationModelBuilder_ = null;
         }
         requestID_ = "";
         subject_ = null;
@@ -8923,9 +8923,9 @@ public final class AuthorizationCheck {
       private void buildPartial0(com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationCheckRequest result) {
         int from_bitField0_ = bitField0_;
         if (((from_bitField0_ & 0x00000001) != 0)) {
-          result.authorizationmodel_ = authorizationmodelBuilder_ == null
-              ? authorizationmodel_
-              : authorizationmodelBuilder_.build();
+          result.AuthorizationModel_ = AuthorizationModelBuilder_ == null
+              ? AuthorizationModel_
+              : AuthorizationModelBuilder_.build();
         }
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000002) != 0)) {
@@ -9003,8 +9003,8 @@ public final class AuthorizationCheck {
 
       public Builder mergeFrom(com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationCheckRequest other) {
         if (other == com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationCheckRequest.getDefaultInstance()) return this;
-        if (other.hasAuthorizationmodel()) {
-          mergeAuthorizationmodel(other.getAuthorizationmodel());
+        if (other.hasAuthorizationModel()) {
+          mergeAuthorizationModel(other.getAuthorizationModel());
         }
         if (other.hasRequestID()) {
           requestID_ = other.requestID_;
@@ -9077,7 +9077,7 @@ public final class AuthorizationCheck {
                 break;
               case 10: {
                 input.readMessage(
-                    getAuthorizationmodelFieldBuilder().getBuilder(),
+                    getAuthorizationModelFieldBuilder().getBuilder(),
                     extensionRegistry);
                 bitField0_ |= 0x00000001;
                 break;
@@ -9145,123 +9145,123 @@ public final class AuthorizationCheck {
       }
       private int bitField0_;
 
-      private com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest authorizationmodel_;
+      private com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest AuthorizationModel_;
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest, com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.Builder, com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequestOrBuilder> authorizationmodelBuilder_;
+          com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest, com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.Builder, com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequestOrBuilder> AuthorizationModelBuilder_;
       /**
-       * <code>.policydecisionpoint.AuthorizationmodelRequest Authorizationmodel = 1;</code>
-       * @return Whether the authorizationmodel field is set.
+       * <code>.policydecisionpoint.AuthorizationModelRequest AuthorizationModel = 1;</code>
+       * @return Whether the AuthorizationModel field is set.
        */
-      public boolean hasAuthorizationmodel() {
+      public boolean hasAuthorizationModel() {
         return ((bitField0_ & 0x00000001) != 0);
       }
       /**
-       * <code>.policydecisionpoint.AuthorizationmodelRequest Authorizationmodel = 1;</code>
-       * @return The authorizationmodel.
+       * <code>.policydecisionpoint.AuthorizationModelRequest AuthorizationModel = 1;</code>
+       * @return The AuthorizationModel.
        */
-      public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest getAuthorizationmodel() {
-        if (authorizationmodelBuilder_ == null) {
-          return authorizationmodel_ == null ? com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.getDefaultInstance() : authorizationmodel_;
+      public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest getAuthorizationModel() {
+        if (AuthorizationModelBuilder_ == null) {
+          return AuthorizationModel_ == null ? com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.getDefaultInstance() : AuthorizationModel_;
         } else {
-          return authorizationmodelBuilder_.getMessage();
+          return AuthorizationModelBuilder_.getMessage();
         }
       }
       /**
-       * <code>.policydecisionpoint.AuthorizationmodelRequest Authorizationmodel = 1;</code>
+       * <code>.policydecisionpoint.AuthorizationModelRequest AuthorizationModel = 1;</code>
        */
-      public Builder setAuthorizationmodel(com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest value) {
-        if (authorizationmodelBuilder_ == null) {
+      public Builder setAuthorizationModel(com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest value) {
+        if (AuthorizationModelBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          authorizationmodel_ = value;
+          AuthorizationModel_ = value;
         } else {
-          authorizationmodelBuilder_.setMessage(value);
+          AuthorizationModelBuilder_.setMessage(value);
         }
         bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>.policydecisionpoint.AuthorizationmodelRequest Authorizationmodel = 1;</code>
+       * <code>.policydecisionpoint.AuthorizationModelRequest AuthorizationModel = 1;</code>
        */
-      public Builder setAuthorizationmodel(
-          com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.Builder builderForValue) {
-        if (authorizationmodelBuilder_ == null) {
-          authorizationmodel_ = builderForValue.build();
+      public Builder setAuthorizationModel(
+          com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.Builder builderForValue) {
+        if (AuthorizationModelBuilder_ == null) {
+          AuthorizationModel_ = builderForValue.build();
         } else {
-          authorizationmodelBuilder_.setMessage(builderForValue.build());
+          AuthorizationModelBuilder_.setMessage(builderForValue.build());
         }
         bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>.policydecisionpoint.AuthorizationmodelRequest Authorizationmodel = 1;</code>
+       * <code>.policydecisionpoint.AuthorizationModelRequest AuthorizationModel = 1;</code>
        */
-      public Builder mergeAuthorizationmodel(com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest value) {
-        if (authorizationmodelBuilder_ == null) {
+      public Builder mergeAuthorizationModel(com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest value) {
+        if (AuthorizationModelBuilder_ == null) {
           if (((bitField0_ & 0x00000001) != 0) &&
-            authorizationmodel_ != null &&
-            authorizationmodel_ != com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.getDefaultInstance()) {
-            getAuthorizationmodelBuilder().mergeFrom(value);
+            AuthorizationModel_ != null &&
+            AuthorizationModel_ != com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.getDefaultInstance()) {
+            getAuthorizationModelBuilder().mergeFrom(value);
           } else {
-            authorizationmodel_ = value;
+            AuthorizationModel_ = value;
           }
         } else {
-          authorizationmodelBuilder_.mergeFrom(value);
+          AuthorizationModelBuilder_.mergeFrom(value);
         }
         bitField0_ |= 0x00000001;
         onChanged();
         return this;
       }
       /**
-       * <code>.policydecisionpoint.AuthorizationmodelRequest Authorizationmodel = 1;</code>
+       * <code>.policydecisionpoint.AuthorizationModelRequest AuthorizationModel = 1;</code>
        */
-      public Builder clearAuthorizationmodel() {
+      public Builder clearAuthorizationModel() {
         bitField0_ = (bitField0_ & ~0x00000001);
-        authorizationmodel_ = null;
-        if (authorizationmodelBuilder_ != null) {
-          authorizationmodelBuilder_.dispose();
-          authorizationmodelBuilder_ = null;
+        AuthorizationModel_ = null;
+        if (AuthorizationModelBuilder_ != null) {
+          AuthorizationModelBuilder_.dispose();
+          AuthorizationModelBuilder_ = null;
         }
         onChanged();
         return this;
       }
       /**
-       * <code>.policydecisionpoint.AuthorizationmodelRequest Authorizationmodel = 1;</code>
+       * <code>.policydecisionpoint.AuthorizationModelRequest AuthorizationModel = 1;</code>
        */
-      public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.Builder getAuthorizationmodelBuilder() {
+      public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.Builder getAuthorizationModelBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
-        return getAuthorizationmodelFieldBuilder().getBuilder();
+        return getAuthorizationModelFieldBuilder().getBuilder();
       }
       /**
-       * <code>.policydecisionpoint.AuthorizationmodelRequest Authorizationmodel = 1;</code>
+       * <code>.policydecisionpoint.AuthorizationModelRequest AuthorizationModel = 1;</code>
        */
-      public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequestOrBuilder getAuthorizationmodelOrBuilder() {
-        if (authorizationmodelBuilder_ != null) {
-          return authorizationmodelBuilder_.getMessageOrBuilder();
+      public com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequestOrBuilder getAuthorizationModelOrBuilder() {
+        if (AuthorizationModelBuilder_ != null) {
+          return AuthorizationModelBuilder_.getMessageOrBuilder();
         } else {
-          return authorizationmodel_ == null ?
-              com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.getDefaultInstance() : authorizationmodel_;
+          return AuthorizationModel_ == null ?
+              com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.getDefaultInstance() : AuthorizationModel_;
         }
       }
       /**
-       * <code>.policydecisionpoint.AuthorizationmodelRequest Authorizationmodel = 1;</code>
+       * <code>.policydecisionpoint.AuthorizationModelRequest AuthorizationModel = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilderV3<
-          com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest, com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.Builder, com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequestOrBuilder> 
-          getAuthorizationmodelFieldBuilder() {
-        if (authorizationmodelBuilder_ == null) {
-          authorizationmodelBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
-              com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest, com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequest.Builder, com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationmodelRequestOrBuilder>(
-                  getAuthorizationmodel(),
+          com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest, com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.Builder, com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequestOrBuilder> 
+          getAuthorizationModelFieldBuilder() {
+        if (AuthorizationModelBuilder_ == null) {
+          AuthorizationModelBuilder_ = new com.google.protobuf.SingleFieldBuilderV3<
+              com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest, com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequest.Builder, com.permguard.pep.internal.proto.AuthorizationCheck.AuthorizationModelRequestOrBuilder>(
+                  getAuthorizationModel(),
                   getParentForChildren(),
                   isClean());
-          authorizationmodel_ = null;
+          AuthorizationModel_ = null;
         }
-        return authorizationmodelBuilder_;
+        return AuthorizationModelBuilder_;
       }
 
       private java.lang.Object requestID_ = "";
@@ -13934,10 +13934,10 @@ public final class AuthorizationCheck {
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_policydecisionpoint_Action_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
-    internal_static_policydecisionpoint_AuthorizationmodelRequest_descriptor;
+    internal_static_policydecisionpoint_AuthorizationModelRequest_descriptor;
   private static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
-      internal_static_policydecisionpoint_AuthorizationmodelRequest_fieldAccessorTable;
+      internal_static_policydecisionpoint_AuthorizationModelRequest_fieldAccessorTable;
   private static final com.google.protobuf.Descriptors.Descriptor
     internal_static_policydecisionpoint_EvaluationRequest_descriptor;
   private static final 
@@ -13994,7 +13994,7 @@ public final class AuthorizationCheck {
       "rotobuf.StructH\000\210\001\001B\r\n\013_Properties\"W\n\006Ac" +
       "tion\022\014\n\004Name\030\001 \001(\t\0220\n\nProperties\030\002 \001(\0132\027" +
       ".google.protobuf.StructH\000\210\001\001B\r\n\013_Propert" +
-      "ies\"\353\001\n\031AuthorizationmodelRequest\022\016\n\006Zon" +
+      "ies\"\353\001\n\031AuthorizationModelRequest\022\016\n\006Zon" +
       "eID\030\001 \001(\003\0225\n\013PolicyStore\030\002 \001(\0132 .policyd" +
       "ecisionpoint.PolicyStore\0226\n\tPrincipal\030\003 " +
       "\001(\0132\036.policydecisionpoint.PrincipalH\000\210\001\001" +
@@ -14082,11 +14082,11 @@ public final class AuthorizationCheck {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_policydecisionpoint_Action_descriptor,
         new java.lang.String[] { "Name", "Properties", "Properties", });
-    internal_static_policydecisionpoint_AuthorizationmodelRequest_descriptor =
+    internal_static_policydecisionpoint_AuthorizationModelRequest_descriptor =
       getDescriptor().getMessageTypes().get(6);
-    internal_static_policydecisionpoint_AuthorizationmodelRequest_fieldAccessorTable = new
+    internal_static_policydecisionpoint_AuthorizationModelRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
-        internal_static_policydecisionpoint_AuthorizationmodelRequest_descriptor,
+        internal_static_policydecisionpoint_AuthorizationModelRequest_descriptor,
         new java.lang.String[] { "ZoneID", "PolicyStore", "Principal", "Entities", "Principal", "Entities", });
     internal_static_policydecisionpoint_EvaluationRequest_descriptor =
       getDescriptor().getMessageTypes().get(7);
@@ -14099,7 +14099,7 @@ public final class AuthorizationCheck {
     internal_static_policydecisionpoint_AuthorizationCheckRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_policydecisionpoint_AuthorizationCheckRequest_descriptor,
-        new java.lang.String[] { "Authorizationmodel", "RequestID", "Subject", "Resource", "Action", "Context", "Evaluations", "RequestID", "Subject", "Resource", "Action", "Context", });
+        new java.lang.String[] { "AuthorizationModel", "RequestID", "Subject", "Resource", "Action", "Context", "Evaluations", "RequestID", "Subject", "Resource", "Action", "Context", });
     internal_static_policydecisionpoint_ReasonResponse_descriptor =
       getDescriptor().getMessageTypes().get(9);
     internal_static_policydecisionpoint_ReasonResponse_fieldAccessorTable = new
