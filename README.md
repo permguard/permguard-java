@@ -10,8 +10,8 @@
   <img src="https://raw.githubusercontent.com/permguard/permguard-assets/main/pink-txt//1line.svg" class="center" width="400px" height="auto"/>
 </p>
 
-
-The Permguard Java SDK provides a simple and flexible client to perform authorization checks against a Permguard Policy Decision Point (PDP) service using gRPC. This README explains how to install the SDK, configure the client, and integrate it into your Java application.
+The Permguard Java SDK provides a simple and flexible client to perform authorization checks against a Permguard Policy Decision Point (PDP) service using gRPC. 
+Plase refer to the [Permguard Documentation](https://www.permguard.com/) for more information.
 
 ---
 
@@ -95,26 +95,5 @@ public static void main(String[] args) {
 ```
 
 ---
-
-## Configuration
-
-The SDK uses the `AZConfig` class to hold connection parameters for your Permguard PDP service. For example:
-
-```java
-AZConfig config = new AZConfig.Builder("localhost", 9094)
-    .usePlaintext(true) // set to true to use plaintext communication
-    .build();
-```
-
-- **host**: The hostname or IP address of your PDP service.
-- **port**: The port number.
-- **usePlaintext**: Use plaintext if TLS is not required; otherwise, configure TLS as needed.
-
-
-
-
-**Permguard** is an Open Source ZTAuth* Provider for cloud-native, edge, and multi-tenant apps, decoupled from application code and leveraging `Policy-as-Code` for centralized, scalable permission management.
-
-This repository implements the Permguard Java SDK (Authorization Check).
 
 Created by [Nitro Agility](https://www.nitroagility.com/).
