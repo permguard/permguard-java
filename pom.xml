@@ -21,6 +21,30 @@
         <maven-jar-plugin.version>3.4.2</maven-jar-plugin.version>
         <maven-javadoc-plugin.version>3.11.2</maven-javadoc-plugin.version>
     </properties>
+    <licenses>
+        <license>
+            <name>Apache License 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>your-id</id>
+            <name>Your Name</name>
+            <email>your-email@example.com</email>
+            <organization>NitroAgility</organization>
+            <organizationUrl>https://your-organization.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git://github.com/permguard/permguard-java.git</connection>
+        <developerConnection>scm:git:ssh://git@github.com:permguard/permguard-java.git</developerConnection>
+        <url>https://github.com/permguard/permguard-java</url>
+    </scm>
+
     <dependencies>
         <!-- gRPC dependencies -->
         <dependency>
@@ -73,6 +97,14 @@
         </dependency>
     </dependencies>
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <excludes>
+                    <exclude>**/*</exclude>
+                </excludes>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -81,12 +113,20 @@
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
+                    <excludes>
+                        <exclude>**/examples/**</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <version>${maven-jar-plugin.version}</version>
+                <configuration>
+                    <excludes>
+                        <exclude>**/examples/**</exclude>
+                    </excludes>
+                </configuration>
             </plugin>
         </plugins>
     </build>
