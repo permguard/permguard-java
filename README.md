@@ -30,7 +30,7 @@ Add the following dependency and build configuration to your project's `pom.xml`
 <dependencies>
     <dependency>
         <groupId>com.permguard.pep</groupId>
-        <artifactId>permguard-java</artifactId>
+        <artifactId>permguard</artifactId>
         <version>0.0.1</version>
     </dependency>
 </dependencies>
