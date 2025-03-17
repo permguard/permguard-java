@@ -67,7 +67,7 @@ public class AZServer {
     }
 
     /**
-     * Implementation of the gRPC authorization service.
+     * Implementation of the gRPC authz server.
      */
     private static class V1PDPServiceImpl extends V1PDPServiceGrpc.V1PDPServiceImplBase {
 

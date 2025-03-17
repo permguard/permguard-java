@@ -39,7 +39,7 @@ import java.io.IOException;
 import java.util.Map;
 
 /**
- * Client for interacting with the Policy Decision Point (PDP) authorization service.
+ * Client for interacting with the Policy Decision Point (PDP) authz server.
  */
 public class AZClient {
     private final AZConfig config;
