@@ -16,7 +16,7 @@
  *  SPDX-License-Identifier: Apache-2.0
   */
 
-package com.permguard.pep.examples.cmd;
+package com.permguard.example;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.permguard.pep.builder.*;
@@ -36,21 +36,20 @@ import java.util.Map;
 public class Check {
 
     private static final String JSON_FILE_PATH = "requests/ok_onlyone1.json";
-    public static final long ZONE_ID = 544318606270L;
-    public static final String POLICY_STORE_ID = "9f9c326d95644da5bba9deb4f10aad1a";
+    public static final long ZONE_ID = 646309364259L;
+    public static final String POLICY_STORE_ID = "917e468442634c5486319ca6f09475e8";
     public static final String EMAIL = "amy.smith@acmecorp.com";
     public static final String USER = "user";
     public static final String KEYCLOAK = "keycloak";
     private static final ObjectMapper objectMapper = new ObjectMapper();
 
     public static void main(String[] args) {
+
+
         AZConfig config = new AZConfig("localhost", 9094, true);
         AZClient client = new AZClient(config);
 
-
-
-
-        System.out.println("🔹 Running checkJsonRequest()");
+        System.out.println("\n🔹 Running checkJsonRequest()");
         checkJsonRequest(client);
 
         System.out.println("\n🔹 Running checkAtomicRequest()");
@@ -70,9 +69,11 @@ public class Check {
      */
     public static void checkJsonRequest(AZClient client) {
         try {
-            // Load JSON as InputStream from resources folder
+            // Load JSON as InputStream from resources folder and print its content
             InputStream inputStream = Check.class.getClassLoader().getResourceAsStream(JSON_FILE_PATH);
             AZRequest request = objectMapper.readValue(inputStream, AZRequest.class);
+            inputStream.close();
+
             long requestStartTime = System.currentTimeMillis();
             AZResponse response = client.check(request);
             long requestEndTime = System.currentTimeMillis();
@@ -80,6 +81,7 @@ public class Check {
             System.out.println("Request execution time: " + (requestEndTime - requestStartTime) + " ms");
             printAuthorizationResult(response);
         } catch (IOException e) {
+            e.printStackTrace();
             System.err.println("❌ Error loading JSON request: " + e.getMessage());
         }
     }
@@ -258,6 +260,8 @@ public class Check {
                     if (eval.getContext() != null && eval.getContext().getReasonUser() != null) {
                         System.out.println("-> Evaluation RequestID " + eval.getRequestId()
                                 + ": Reason User: " + eval.getContext().getReasonUser().getMessage());
+                    } else if(eval.isDecision()){
+                        System.out.println("-> Evaluation RequestID " + eval.getRequestId() + ": Single Authorization Permitted");
                     }
                 }
             }
