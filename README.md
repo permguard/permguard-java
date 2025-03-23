@@ -31,7 +31,7 @@ Add the following dependency and build configuration to your project's `pom.xml`
     <dependency>
         <groupId>com.permguard.pep</groupId>
         <artifactId>permguard</artifactId>
-        <version>0.0.1</version>
+        <version>0.0.2</version>
     </dependency>
 </dependencies>
 
