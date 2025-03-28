@@ -6,7 +6,7 @@
     <artifactId>permguard</artifactId>
     <version>0.0.1</version>
     <name>Permguard</name>
-    <description>Permguard Java SDK (Authorization Check)</description>
+    <description>The official Java SDK for Permguard</description>
     <url>https://github.com/permguard/permguard-java</url>
     <packaging>jar</packaging>
     <properties>

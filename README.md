@@ -1,4 +1,4 @@
-# Permguard Java SDK
+# The official Java SDK for Permguard
 
 [![GitHub License](https://img.shields.io/github/license/permguard/permguard-java)](https://github.com/permguard/permguard-java?tab=Apache-2.0-1-ov-file#readme)
 [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/permguard)](https://x.com/intent/follow?original_referer=https%3A%2F%2Fdeveloper.x.com%2F&ref_src=twsrc%5Etfw%7Ctwcamp%5Ebuttonembed%7Ctwterm%5Efollow%7Ctwgr%5ETwitterDev&screen_name=Permguard)
@@ -127,9 +127,6 @@ The SDK uses the `AZConfig` class to hold connection parameters for your Permgua
 - **host**: The hostname or IP address of your PDP service.
 - **port**: The port number.
 - **usePlaintext**: Use plaintext if TLS is not required; otherwise, configure TLS as needed.
-
-
-
 
 **Permguard** is an Open Source ZTAuth* Provider for cloud-native, edge, and multi-tenant apps, decoupled from application code and leveraging `Policy-as-Code` for centralized, scalable permission management.
 
